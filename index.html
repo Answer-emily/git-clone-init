@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>git-clone-init</title>
+	</head>
+	<body>
+		<header>
+			<h1>git clone init sample</h1>
+		</header>
+		<article>
+			<p>Number : <span id="number"></span></p>
+			<input type="button" value="Up" id="up" />
+			<input type="button" value="Down" id="down" />
+			<input type="button" value="init" id="init" />
+		</article>
+	</body>
+	<script>
+		var number = 0;
+		document.getElementById(number).textContent = number;
+		document.getElementById("Up").onclick = () => {
+			number += 1;
+		};
+		document.getElementById("Up").onclick = () => {
+			number -= 1;
+		};
+	</script>
+</html>
